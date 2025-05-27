@@ -42,10 +42,12 @@
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
+  position: relative;
 }
 .header__button {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .header .modal {
   display: none;
@@ -138,6 +140,7 @@
     transform: scale(1);
   }
 }
+
 @media (max-width: 768px) {
   .header__label {
     display: flex;
@@ -179,6 +182,13 @@
   .header__checkbox:checked ~ .header__nav {
     display: flex;
   }
+  .header .modal__content {
+    max-width: 270px;
+  }
+}
+.section1 {
+  display: flex;
+  justify-content: center;
 }
 
 body {
