@@ -1,0 +1,29 @@
+.section1 {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  &__text {
+    width: 100px;
+    color: $black;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  &__anemone {
+    position: relative;
+    top: -80px;
+    color: $black;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+  }
+}

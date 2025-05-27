@@ -1,0 +1,79 @@
+<header class="header container">
+  <img
+    src="../images/flowers_logo.svg"
+    alt="flower logo"
+    class="header__logo"
+  />
+  <input class="header__checkbox" id="toggle" type="checkbox" />
+  <label class="header__label" for="toggle">
+    <span></span><span></span><span></span>
+  </label>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item">
+        <a href="#" class="header__link">Anemone</a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link">About us</a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link">Store</a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link">Delivery</a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link">Delivery</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="header__button">
+    <img src="../images/tell.svg" alt="tell" class="header__tell" />
+  </button>
+
+  <div class="modal" id="contactModal">
+    <div class="modal__content">
+      <button class="modal__close" id="closeModal">✕</button>
+      <h2 class="modal__h2">Contact us</h2>
+      <p class="modal__text">
+        If you have any additional questions or you want to clarify something
+        before you make an order please fill in your contact details. We will
+        call you back.
+      </p>
+      <form class="modal__form">
+        <label class="modal__label">
+          <p class="modal__name">Name</p>
+          <input class="modal__input" type="text" placeholder="Your name" />
+        </label>
+        <label class="modal__label">
+          <p class="modal__email">Email</p>
+          <input class="modal__input" type="email" placeholder="Your email" />
+        </label>
+        <button type="submit" class="modal__send">Send</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const openBtn = document.querySelector(".header__button");
+    const modal = document.getElementById("contactModal");
+    const closeBtn = document.getElementById("closeModal");
+
+    openBtn.addEventListener("click", () => {
+      modal.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("active");
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("active");
+      }
+    });
+  });
+</script>
