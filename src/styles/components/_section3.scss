@@ -1,0 +1,67 @@
+.store{
+    font-family: "Montserrat", sans-serif;
+   
+    .content{
+        display: flex;
+        &_logo{
+        font-weight: 700;
+        font-size: 44px;
+        margin-left: 24px;
+    } 
+     &_line{
+        display: block;
+        width: 1162px;
+        height: 1px;
+        background-color: black;
+        margin: 30px 0;
+        margin-top: -60px;
+        margin-left: 164px;
+    }
+}
+  .div{
+    display: flex;
+    flex-wrap: wrap;
+    &_img{
+       
+    }
+    &_logo{
+        font-weight: 500;
+       font-size: 36px;
+       margin-left: 34px;
+    }
+    &_line{
+           display: block;
+            width:338px;
+            height: 1px;
+            background-color: black;
+            margin: 30px 0;
+            margin-left: 300px;
+            margin-top: -50px;
+    }
+    &_buy{
+        font-weight: 600;
+        font-size: 28px;
+        margin-left: 34px;
+        color: gray;
+    }
+   }
+   &_button{
+    background-color: #E86F54;
+    width: 280;
+    height: 64;
+    top: 1538px;
+    left: 476px;
+    border-radius: 38px ;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    gap: 10px;
+    border: #E86F54;
+     color: white;
+    &_title{
+       font-weight: 500;
+        font-size: 28px;
+    }
+   }
+}
